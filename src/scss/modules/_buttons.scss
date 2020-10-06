@@ -1,9 +1,10 @@
 .button {
     color: $base;
     background-color: $primary-color;
+    border-radius: 10px;
     border: none;
     display: block;
-    padding: 8px 16px;
+    padding: 10px 20px;
     overflow: hidden;
     text-decoration: none;
   }

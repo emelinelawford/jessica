@@ -1,10 +1,23 @@
 // Colors
-$primary-color: #ab2d2e;
-$secondary-color: #24AB96;
+$primary-color: #23A692;
+$secondary-color: #ab2d2e;
 $body-color: #282828;
 $header-color: $primary-color;
 $base: #F7F6F0;
 
 // Font families
-$header-font: 'Trebuchet MS', Helvetica, sans-serif;
-$body-font: Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap"); /* Using a url */
+
+$font-family: 'Poppins', Helvetica, sans-serif;
+
+@mixin bold-font {
+    font-family: $font-family;
+    font-weight: 700;
+    text-transform: uppercase;
+  }  
+
+// Spacing
+$desktop-unit: 30px;
+$desktop-unit-half: $desktop-unit / 2;
+$mobile-unit: 20px;
+$mobile-unit-half: $mobile-unit / 2;
