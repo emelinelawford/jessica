@@ -42,6 +42,10 @@ h5{
   font-size: 0.8em;
 }
 
+a{
+  text-decoration: none;
+}
+
 //Text Links
 .text-link{
   font-weight: 700;
@@ -61,7 +65,10 @@ h5{
 }
 
 .text-link-invert{
-  color: white;
+  font-weight: 700;
+  border-bottom: 3px solid;
+  padding-bottom: 0;  
+  color: $white;
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, $primary-color 50%, $white 50%);
   -webkit-transition: background-position 100ms;

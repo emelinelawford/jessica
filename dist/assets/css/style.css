@@ -10,8 +10,7 @@ html {
   font-size: 62.5%; }
 
 body, html {
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -406,9 +405,6 @@ nav {
         width: 50px;
         height: auto; }
 
-body {
-  height: 100vh; }
-
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,6 +422,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 70vh; }
+
+footer {
+  background-color: #23A692;
+  padding: 60px;
+  color: #FFFFFF;
+  text-align: center; }
 
 .button {
   color: #F7F6F0;
@@ -472,6 +474,9 @@ h4 {
 h5 {
   font-size: 0.8em; }
 
+a {
+  text-decoration: none; }
+
 .text-link {
   font-weight: 700;
   border-bottom: 3px solid;
@@ -489,7 +494,10 @@ h5 {
     background-position: 0% 100%; }
 
 .text-link-invert {
-  color: white;
+  font-weight: 700;
+  border-bottom: 3px solid;
+  padding-bottom: 0;
+  color: #FFFFFF;
   background-size: 100% 200%;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #23A692), color-stop(50%, #FFFFFF));
   background-image: -o-linear-gradient(top, #23A692 50%, #FFFFFF 50%);
