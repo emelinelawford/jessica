@@ -3,4 +3,29 @@ footer{
     padding: $desktop-unit-double;
     color: $white;
     text-align: center;
+
+    .socials{
+
+        ul{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+            li{
+                margin: 0 0.3em;
+
+                img{
+                    width:auto;
+                    height:1.7em;
+                }
+            }
+        }
+
+        p{
+            margin:0;
+        }
+    }
 }

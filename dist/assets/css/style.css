@@ -12,6 +12,9 @@ html {
 body, html {
   min-height: 100vh; }
 
+li {
+  list-style-type: none; }
+
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -428,6 +431,29 @@ footer {
   padding: 60px;
   color: #FFFFFF;
   text-align: center; }
+  footer .socials ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0; }
+    footer .socials ul li {
+      margin: 0 0.3em; }
+      footer .socials ul li img {
+        width: auto;
+        height: 1.7em; }
+  footer .socials p {
+    margin: 0; }
 
 .button {
   color: #F7F6F0;
