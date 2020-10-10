@@ -1,5 +1,10 @@
 body {
+  font: normal 22px/150% $font-family;
   color: $body-color;
+}
+
+h1, h2, h5, a{
+  color: $primary-color;
 }
 
 h1,
@@ -10,4 +15,55 @@ h5 {
   @include bold-font;
 }
 
+h1{
+  font-size: 2.2em;
+}
 
+h2{
+  font-size: 1.6em;
+}
+
+h3{
+  font-size: 1.25em;
+}
+
+h4{
+  font-size: 1.1em;
+}
+
+h5{
+  font-size: 0.8em;
+}
+
+//Text Links
+.text-link{
+  font-weight: 700;
+  border-bottom: 3px solid;
+  padding-bottom: 0;  
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, $white 50%, $primary-color 50%);
+  -webkit-transition: background-position 100ms;
+  -moz-transition: background-position 100ms;
+  transition: background-position 100ms;
+
+    &:hover{
+      background-color: $primary-color;
+      color: white;
+      background-position: 0% 100%;
+    }
+}
+
+.text-link-invert{
+  color: white;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, $primary-color 50%, $white 50%);
+  -webkit-transition: background-position 100ms;
+  -moz-transition: background-position 100ms;
+  transition: background-position 100ms;
+
+  &:hover{
+    background-color: $white;
+    color: $primary-color;
+    background-position: 0% 100%;
+  }
+}
