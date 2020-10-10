@@ -438,8 +438,12 @@ body {
   text-decoration: none; }
 
 body {
-  font: normal 22px/150% "Poppins", Helvetica, sans-serif;
+  font: normal 18px/150% "Poppins", Helvetica, sans-serif;
   color: #282828; }
+
+@media (min-width: 720px) {
+  body {
+    font-size: 22px; } }
 
 h1, h2, h5, a {
   color: #23A692; }

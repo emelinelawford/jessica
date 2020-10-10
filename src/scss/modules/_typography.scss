@@ -1,8 +1,15 @@
-body {
-  font: normal 22px/150% $font-family;
+body{
+  font: normal 18px/150% $font-family;
   color: $body-color;
 }
 
+//Desktop size
+@media (min-width: 720px){ 
+  body {
+    font-size:22px;
+}
+
+}
 h1, h2, h5, a{
   color: $primary-color;
 }
