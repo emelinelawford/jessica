@@ -17,6 +17,12 @@ $font-family: 'Poppins', Helvetica, sans-serif;
     text-transform: uppercase;
   }  
 
+@mixin box-shadow {
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
+}
+
 // Spacing
 $desktop-unit: 30px;
 $desktop-unit-double: $desktop-unit * 2;

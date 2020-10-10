@@ -437,7 +437,18 @@ footer {
   display: block;
   padding: 15px 30px;
   overflow: hidden;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  .button:hover {
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.05, 1.05);
+        -ms-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05); }
 
 body {
   font: normal 18px/150% "Poppins", Helvetica, sans-serif;
@@ -489,7 +500,6 @@ a {
   -o-transition: background-position 100ms;
   transition: background-position 100ms; }
   .text-link:hover {
-    background-color: #23A692;
     color: white;
     background-position: 0% 100%; }
 
@@ -502,11 +512,10 @@ a {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #23A692), color-stop(50%, #FFFFFF));
   background-image: -o-linear-gradient(top, #23A692 50%, #FFFFFF 50%);
   background-image: linear-gradient(to bottom, #23A692 50%, #FFFFFF 50%);
-  -webkit-transition: background-position 100ms;
-  -o-transition: background-position 100ms;
-  transition: background-position 100ms; }
+  -webkit-transition: background-position 0.1s ease-in-out;
+  -o-transition: background-position 0.1s ease-in-out;
+  transition: background-position 0.1s ease-in-out; }
   .text-link-invert:hover {
-    background-color: #FFFFFF;
     color: #23A692;
     background-position: 0% 100%; }
 

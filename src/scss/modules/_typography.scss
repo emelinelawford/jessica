@@ -58,7 +58,6 @@ a{
   transition: background-position 100ms;
 
     &:hover{
-      background-color: $primary-color;
       color: white;
       background-position: 0% 100%;
     }
@@ -71,12 +70,11 @@ a{
   color: $white;
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, $primary-color 50%, $white 50%);
-  -webkit-transition: background-position 100ms;
-  -moz-transition: background-position 100ms;
-  transition: background-position 100ms;
+  -webkit-transition: background-position 0.1s ease-in-out;;
+  -moz-transition: background-position 0.1s ease-in-out;;
+  transition: background-position 0.1s ease-in-out;;
 
   &:hover{
-    background-color: $white;
     color: $primary-color;
     background-position: 0% 100%;
   }

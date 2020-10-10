@@ -7,4 +7,14 @@
     padding: $desktop-unit-half $desktop-unit;
     overflow: hidden;
     text-decoration: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    transition: all 0.1s ease-in-out;
+
+    &:hover{
+      @include box-shadow;
+      transform: scale(1.05, 1.05);
+    }
+    
   }
