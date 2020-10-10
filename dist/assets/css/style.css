@@ -436,7 +436,7 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 32em; }
-    main .container h1, main .container p {
+    main .container h1, main .container p, main .container a {
       margin: 15px;
       text-align: center; }
 
