@@ -1,5 +1,6 @@
 // Colors
 $primary-color: #23A692;
+$primary-color-light: #25B39D;
 $secondary-color: #ab2d2e;
 $body-color: #282828;
 $header-color: $primary-color;
@@ -18,12 +19,6 @@ $font-family: 'Poppins', Helvetica, sans-serif;
     text-align: center;
     line-height: 125%;
   }  
-
-@mixin box-shadow {
-  -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
-  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
-}
 
 // Spacing
 $desktop-unit: 30px;
