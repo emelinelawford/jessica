@@ -1,20 +1,48 @@
 main{
     display:flex;
     justify-content: center;
-    align-items: center;
-    height: 70vh;
 
-    .container{
+    .hero{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 32em;
+        flex-flow: column;
+        margin-bottom: $unit-double;
 
-        h1, p, a{
-            margin: $desktop-unit-half;
-            text-align: center;
+        .hero-img{
+
+            img{
+                width: 100%;
+            }
         }
+
+        .hero-copy{
+            padding: $unit;
+        }
+
     }
 }
+
+@media (min-width: 720px){ 
+    main{
+        .hero{
+            align-items: center;
+            flex-flow: row;
+            max-width:1280px;
+            margin-bottom: $desktop-unit-double;
+    
+            .hero-img{
+    
+                img{
+                }
+            }
+    
+            .hero-copy{
+                padding: $desktop-unit;
+    
+                h1{
+                    text-align: left;
+                }
+            }
+    
+        }
+    }
+  }
