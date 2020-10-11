@@ -1,11 +1,37 @@
 main{
     display:flex;
     justify-content: center;
+    flex-flow:row;
+    flex-wrap: wrap;
+
+    .container{
+        width:32em;
+        margin:0;
+
+        .intro{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+
+            .intro-img{
+
+                flex-grow: 2;
+
+                img{
+                    width:100%;
+                }
+            }
+            p{
+                flex-grow: 1;
+                
+            }
+        }
+    }
 
     .hero{
         display: flex;
         flex-flow: column;
-        margin-bottom: $unit-double;
+        margin: 0;
 
         .hero-img{
 
@@ -16,18 +42,36 @@ main{
 
         .hero-copy{
             padding: $unit;
+
+            ul{
+                margin:0;
+                padding:0;
+
+                li{
+                    display: inline-block;
+                    margin-right: $unit;
+                }
+            }
         }
 
     }
 }
 
-@media (min-width: 720px){ 
+section{
+    margin: $unit-double $unit-half;
+}
+
+hr{
+    border: 1px solid $primary-color;
+    width: 90%;
+}
+
+@media (min-width: $media-desktop){ 
     main{
         .hero{
             align-items: center;
             flex-flow: row;
             max-width:1280px;
-            margin-bottom: $desktop-unit-double;
     
             .hero-img{
     
@@ -36,7 +80,7 @@ main{
             }
     
             .hero-copy{
-                padding: $desktop-unit;
+                padding: $desktop-unit-double;
     
                 h1{
                     text-align: left;
@@ -44,5 +88,13 @@ main{
             }
     
         }
+    }
+
+    section{
+        margin: $desktop-unit-double 0;
+    }
+
+    hr{
+        width: 100%;
     }
   }

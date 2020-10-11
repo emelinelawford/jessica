@@ -1,10 +1,10 @@
 body{
-  font: normal 18px/150% $font-family;
+  font: normal 18px/170% $font-family;
   color: $body-color;
 }
 
 //Desktop size
-@media (min-width: 720px){ 
+@media (min-width: $media-desktop){ 
   body {
     font-size:22px;
 }
@@ -14,20 +14,18 @@ h1, h2, h5, a{
   color: $primary-color;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1,h2,h3,h4,h5,label {
   @include bold-font;
 }
 
 h1{
   font-size: 2.2em;
+  text-transform: capitalize;
 }
 
 h2{
   font-size: 1.6em;
+  text-transform: capitalize;
 }
 
 h3{
@@ -45,6 +43,42 @@ h5{
 a{
   text-decoration: none;
 }
+
+label{
+  color: $grey-out;
+}
+
+//Block quotes
+figure{
+  border-left: 6px solid $primary-color;
+  padding-left: $unit;
+
+  blockquote{
+    font-size: 1.25em;
+    color: $primary-color;
+    font-weight: 700;
+    margin: 0;
+
+  }
+
+  figcaption{
+  font-weight: 700;
+    
+    cite{
+      font-size: 0.8em;
+      font-weight: 500;
+      font-style: normal;
+    }
+  }
+}
+
+
+@media (min-width: $media-desktop){ 
+  figure{
+    margin: $desktop-unit-double -100px $desktop-unit-double 270px;
+  }
+}
+
 
 //Text Links
 .text-link{
