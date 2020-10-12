@@ -407,9 +407,16 @@ nav {
     nav ul li {
       display: inline-block;
       margin: 30px; }
-      nav ul li img {
-        width: 3em;
-        height: auto; }
+      nav ul li a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        nav ul li a img {
+          width: 3em;
+          height: auto; }
 
 main {
   display: -webkit-box;
@@ -431,23 +438,17 @@ main {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-flow: row;
-              flex-flow: row;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      justify-items: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      main .container .intro .intro-img {
-        -webkit-box-flex: 2;
-            -ms-flex-positive: 2;
-                flex-grow: 2; }
-        main .container .intro .intro-img img {
-          width: 100%; }
-      main .container .intro p {
-        -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1; }
+      main .container .intro .intro-img img {
+        margin-left: 20%;
+        width: 60%; }
   main .hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -476,6 +477,26 @@ hr {
   width: 90%; }
 
 @media (min-width: 768px) {
+  main .container .intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    main .container .intro .intro-img {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      main .container .intro .intro-img img {
+        width: 100%;
+        margin-left: 0; }
+    main .container .intro p {
+      margin-left: 30px;
+      -webkit-box-flex: 2;
+          -ms-flex: 2;
+              flex: 2; }
   main .hero {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -522,6 +543,8 @@ footer {
         height: 1.7em; }
   footer .socials p {
     margin: 0; }
+  footer .designer {
+    font-size: 0.8em; }
 
 .button {
   color: #F7F6F0;

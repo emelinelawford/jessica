@@ -14,11 +14,15 @@ nav{
             display: inline-block;
             margin: $desktop-unit;
 
-            img{
-                width: 3em;
-                height: auto;
-            }
+            a{
+                display: flex;
+                align-items: center;
 
+                img{
+                    width: 3em;
+                    height: auto;
+                }
+            }
         }
     }
 }

@@ -10,20 +10,19 @@ main{
 
         .intro{
             display: flex;
-            flex-flow: row;
+            flex-flow: column;
+            justify-items: center;
             align-items: center;
 
             .intro-img{
 
-                flex-grow: 2;
-
                 img{
-                    width:100%;
+                    margin-left: 20%;
+                    width:60%;
                 }
             }
             p{
-                flex-grow: 1;
-                
+
             }
         }
     }
@@ -68,6 +67,29 @@ hr{
 
 @media (min-width: $media-desktop){ 
     main{
+
+        .container{
+    
+            .intro{
+
+                flex-flow: row;
+                align-items: center;
+
+                .intro-img{
+                    flex: 1;
+
+                    img{
+                        width:100%;
+                        margin-left: 0;
+                    }
+                }
+                p{
+                    margin-left: $desktop-unit;
+                    flex: 2;
+                }
+            }
+        }
+
         .hero{
             align-items: center;
             flex-flow: row;
