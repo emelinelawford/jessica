@@ -33,6 +33,13 @@ nav{
             li{
                 margin: $desktop-unit;
 
+                a{
+
+                    img{
+                        width: 3.7em;
+                    }
+                }
+
             }
         }
     }

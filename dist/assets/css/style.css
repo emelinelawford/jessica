@@ -420,7 +420,9 @@ nav {
 
 @media (min-width: 768px) {
   nav ul li {
-    margin: 30px; } }
+    margin: 30px; }
+    nav ul li a img {
+      width: 3.7em; } }
 
 main {
   display: -webkit-box;
