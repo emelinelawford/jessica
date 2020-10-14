@@ -40,7 +40,7 @@ main{
         }
 
         .hero-copy{
-            padding: $unit;
+            margin: 0 $unit;
 
             ul{
                 margin:0;
@@ -57,7 +57,27 @@ main{
 }
 
 section{
-    margin: $unit-double $unit-half;
+    margin: $unit-double $unit;
+
+    .ul-help{
+        display: flex;
+        flex-flow: column;
+    
+        .li-help{
+            display:flex;
+            flex-flow: column;
+            align-items: center;
+    
+            img{
+                height: 6em;
+                width: auto;
+            }
+        }
+    
+        p{
+            text-align: center;
+        }
+    }
 }
 
 hr{
@@ -67,11 +87,8 @@ hr{
 
 @media (min-width: $media-desktop){ 
     main{
-
         .container{
-    
             .intro{
-
                 flex-flow: row;
                 align-items: center;
 
@@ -95,14 +112,8 @@ hr{
             flex-flow: row;
             max-width:1280px;
     
-            .hero-img{
-    
-                img{
-                }
-            }
-    
             .hero-copy{
-                padding: $desktop-unit-double;
+                padding: $desktop-unit;
     
                 h1{
                     text-align: left;
@@ -110,13 +121,30 @@ hr{
             }
     
         }
-    }
 
-    section{
-        margin: $desktop-unit-double 0;
-    }
+        section{
+            margin: $desktop-unit-double 0;
+        }
 
-    hr{
-        width: 100%;
+        hr{
+            width: 100%;
+        }
+        
+        .ul-help{
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            .li-help{
+                width:49%;
+
+                &:first-child{
+                    width:100%;
+                }
+            }
+
+            p{
+                text-align: center;
+            }
+        }
     }
-  }
+}

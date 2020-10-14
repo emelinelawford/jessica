@@ -1,12 +1,13 @@
 .button {
-  color: $base;
+  color: $white;
   text-align: center;
   background-color: $primary-color;
   border-radius: 10px;
   border: none;
   display: block;
   width: fit-content;
-  padding: $desktop-unit-half $desktop-unit;
+  padding: $unit-half $unit;
+  margin-bottom: $unit-half;
   overflow: hidden;
   text-decoration: none;
 
@@ -28,7 +29,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: $primary-color-light;
+    background: lighten( $primary-color, 5% );
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -61,4 +62,53 @@
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
   }
+}
+
+//social media
+
+.facebook{
+  background-color: $facebook-blue;
+
+  &:before{
+    background: lighten( $facebook-blue, 5% );
+  }
+}
+
+.instagram{
+  background-color: $instagram-purple;
+
+  &:before{
+    background: lighten( $instagram-purple, 5% ); 
+  }
+}
+
+.twitter{
+  background-color: $twitter-blue;
+
+  &:before{
+    background: darken( $twitter-blue, 5% );
+  }
+}
+
+.youtube{
+  background-color: $youtube-red;
+
+  &:before{
+    background: darken( $youtube-red, 5% );
+  }
+}
+
+.whatsapp{
+  background-color: $whatsapp-green;
+
+  &:before{
+    background: darken( $whatsapp-green, 5% );
+  }
+}
+
+@media (min-width: $media-desktop){ 
+  .button{
+    padding: $desktop-unit-half $desktop-unit;
+    margin-bottom: $desktop-unit-half;
+  } 
 }

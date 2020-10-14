@@ -5,14 +5,14 @@ nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
         margin: 0;
         padding: 0;
 
         li{
             display: inline-block;
-            margin: $desktop-unit;
+            margin: $unit;
 
             a{
                 display: flex;
@@ -22,6 +22,17 @@ nav{
                     width: 3em;
                     height: auto;
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: $media-desktop){
+    nav{
+        ul{
+            li{
+                margin: $desktop-unit;
+
             }
         }
     }

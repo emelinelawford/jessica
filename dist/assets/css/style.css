@@ -398,15 +398,15 @@ nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 100%;
     margin: 0;
     padding: 0; }
     nav ul li {
       display: inline-block;
-      margin: 30px; }
+      margin: 20px; }
       nav ul li a {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -417,6 +417,10 @@ nav {
         nav ul li a img {
           width: 3em;
           height: auto; }
+
+@media (min-width: 768px) {
+  nav ul li {
+    margin: 30px; } }
 
 main {
   display: -webkit-box;
@@ -461,7 +465,7 @@ main {
     main .hero .hero-img img {
       width: 100%; }
     main .hero .hero-copy {
-      padding: 20px; }
+      margin: 0 20px; }
       main .hero .hero-copy ul {
         margin: 0;
         padding: 0; }
@@ -470,7 +474,31 @@ main {
           margin-right: 20px; }
 
 section {
-  margin: 40px 10px; }
+  margin: 40px 20px; }
+  section .ul-help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+    section .ul-help .li-help {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      section .ul-help .li-help img {
+        height: 6em;
+        width: auto; }
+    section .ul-help p {
+      text-align: center; }
 
 hr {
   border: 1px solid #23A692;
@@ -507,13 +535,27 @@ hr {
             flex-flow: row;
     max-width: 1280px; }
     main .hero .hero-copy {
-      padding: 60px; }
+      padding: 30px; }
       main .hero .hero-copy h1 {
         text-align: left; }
-  section {
+  main section {
     margin: 60px 0; }
-  hr {
-    width: 100%; } }
+  main hr {
+    width: 100%; }
+  main .ul-help {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    main .ul-help .li-help {
+      width: 49%; }
+      main .ul-help .li-help:first-child {
+        width: 100%; }
+    main .ul-help p {
+      text-align: center; } }
 
 footer {
   background-color: #23A692;
@@ -547,7 +589,7 @@ footer {
     font-size: 0.8em; }
 
 .button {
-  color: #F7F6F0;
+  color: #FFFFFF;
   text-align: center;
   background-color: #23A692;
   border-radius: 10px;
@@ -556,7 +598,8 @@ footer {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 15px 30px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
   overflow: hidden;
   text-decoration: none;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -578,7 +621,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #25B39D;
+    background: #27bba5;
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
         transform: scaleX(0);
@@ -614,6 +657,36 @@ footer {
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out; }
 
+.facebook {
+  background-color: #1877f2; }
+  .facebook:before {
+    background: #3085f3; }
+
+.instagram {
+  background-color: #c32aa3; }
+  .instagram:before {
+    background: #d333b2; }
+
+.twitter {
+  background-color: #1da1f2; }
+  .twitter:before {
+    background: #0d95e8; }
+
+.youtube {
+  background-color: #ff0000; }
+  .youtube:before {
+    background: #e60000; }
+
+.whatsapp {
+  background-color: #4FCE5D; }
+  .whatsapp:before {
+    background: #3bc84b; }
+
+@media (min-width: 768px) {
+  .button {
+    padding: 15px 30px;
+    margin-bottom: 15px; } }
+
 body {
   font: normal 18px/170% "Poppins", Helvetica, sans-serif;
   color: #282828; }
@@ -633,8 +706,12 @@ h1, h2, h3, h4, h5, label {
   line-height: 125%; }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 2em;
   text-transform: capitalize; }
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.2em; } }
 
 h2 {
   font-size: 1.6em;
@@ -654,6 +731,9 @@ a {
 
 label {
   color: #7C7C7C; }
+
+ul {
+  padding: 0; }
 
 figure {
   border-left: 6px solid #23A692;
