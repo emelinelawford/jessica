@@ -154,7 +154,8 @@ function throwError(taskName, msg) {
     });
 }
 
-gulp.task('default', ['css', 'js', 'browser-sync'], function () {
+
+gulp.task('default', gulp.parallel('css', 'js', 'browser-sync'), function () {
     gulp.watch("src/scss/**/*.scss", ['css']);
     gulp.watch("src/js/*.js", ['js']);
     gulp.watch("dist/*.html", ['bs-reload']);
